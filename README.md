@@ -1,10 +1,12 @@
 # queenb-summer-project-template-24
 
-This project template is designed for junior deevlopers aimed at gaining hands-on experience in full-stack development. 
+This project template is designed for junior developers aimed at gaining hands-on experience in full-stack development. 
 This project includes a Node.js server with Express, a React client, and MongoDB for the database, providing an opportunity to engage in frontend development, backend development, and API integration.
 Specifically the template is a full-stack MERN application for managing a library of rubber ducks - but you can modify it and build a library application of your choice.
 
-**FORK THIS REPO** before starting the installations and settings. 
+**Create a copy of this repo** before starting the installations and settings: 
+1. Click the green “Use this template” button (top right).
+2. Create a new repository under your own GitHub account.
 
 ## Table of Contents
 
@@ -42,8 +44,7 @@ To get started with this project, you need to clone the repository to your local
 ```bash
 cd path/to/your/directory
 ```
-3. Fork this repository - only ONCE per project
-4. Clone the forked Repository:
+3. Clone Repository:
    - Copy your repository URL
    - Run the following command to clone the repository:
 ```bash
@@ -137,7 +138,7 @@ npm start
 - Feedback:
    - Report any issues or provide feedback for further improvements.
 
-After testing the template and verifying the server and client are working as expected - set yout own project MongoDB configurstion and Evironment variavles:
+After testing the template and verifying the server and client are working as expected - set your own project MongoDB configuration and Environment variables:
 
 ### Setting Up MongoDB Atlas
 only once per project.
@@ -296,14 +297,14 @@ cd client
 ```
 
 2. **Start the Client**:
-   - Start the React development server:
+   - Start the Vite development server:
 ```bash
-npm start
+npm run dev
 ```
-   - By default, the client will be accessible at `http://localhost:3000`.
+   - By default, the client will be accessible at `http://localhost:3002`.
 
 3. **View the Application**:
-   - Open a web browser and navigate to `http://localhost:3000` to view the application. The client communicates with the backend server to fetch and display data.
+   - Open a web browser and navigate to `http://localhost:3002` to view the application. The client communicates with the backend server to fetch and display data.
 
 ### Stopping the Servers
 

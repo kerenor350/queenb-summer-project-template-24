@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# React Client - Built with Vite ⚡
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend client for the QueenB Summer Project Template, built with React and Vite for fast development and optimal performance.
 
-## Available Scripts
+## 🚀 Getting Started
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+- [Node.js](https://nodejs.org/en) (version 20.x or higher)
+- npm (version 10.x or higher)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Navigate to the client directory**:
+```bash
+cd client
+```
 
-### `npm test`
+2. **Install dependencies**:
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Set up environment variables**:
+   - Create a `.env` file in the client directory
+   - Copy contents from `.env.example`
+   - Update `VITE_API_URL` to match your backend server URL
+
+## 📜 Available Scripts
+
+In the client directory, you can run:
+
+### `npm run dev`
+
+Runs the app in development mode with Vite's fast hot module replacement.  
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+The page will reload instantly when you make changes, and you'll see any lint errors in the console.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `dist` folder.  
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.  
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run preview`
 
-### `npm run eject`
+Serves the production build locally for testing.  
+Run this after `npm run build` to preview the optimized production build.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `npm run lint`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Runs ESLint to check for code quality issues and enforce coding standards.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🏗️ Built With
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **[React](https://reactjs.org/)** - A JavaScript library for building user interfaces
+- **[Vite](https://vitejs.dev/)** - Next generation frontend tooling for fast development
+- **[React Router](https://reactrouter.com/)** - Declarative routing for React
+- **[Axios](https://axios-http.com/)** - Promise-based HTTP client
 
-## Learn More
+## 🎯 Key Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **⚡ Lightning Fast** - Vite's instant server start and HMR
+- **🎨 Component-Based Architecture** - Reusable and maintainable React components
+- **🛣️ Client-Side Routing** - Smooth navigation with React Router
+- **📱 Responsive Design** - Works on desktop and mobile devices
+- **🔧 Modern Development** - ESLint, modern JavaScript features, and CSS modules
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
 
-### Code Splitting
+```
+client/
+├── public/                 # Static assets
+├── src/
+│   ├── components/        # Reusable UI components
+│   │   ├── common/       # Shared components (buttons, forms, etc.)
+│   │   └── RandomDuck/   # Feature-specific components
+│   ├── context/          # React Context providers
+│   ├── pages/            # Page-level components
+│   ├── services/         # API services and utilities
+│   ├── styles/           # Global styles and CSS modules
+│   ├── App.jsx           # Main app component with routing
+│   └── main.jsx          # Application entry point
+├── index.html            # HTML template
+├── vite.config.js        # Vite configuration
+├── package.json          # Dependencies and scripts
+└── .env.example          # Environment variables template
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 Environment Variables
 
-### Analyzing the Bundle Size
+Create a `.env` file in the client directory and set:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```env
+VITE_API_URL=http://localhost:5001/api
+```
 
-### Making a Progressive Web App
+**Note**: With Vite, environment variables must be prefixed with `VITE_` to be accessible in the browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 💡 Modern React Practices
 
-### Advanced Configuration
+This project uses modern React development practices:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **No React Imports Required**: Modern React with JSX transformation
+- **Functional Components with Hooks**: useState, useEffect, useContext
+- **CSS Modules**: Scoped styling for components
+- **PropTypes Disabled**: Using TypeScript-style development without runtime prop validation
 
-### Deployment
+## 🔧 Development Tips
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Use `Ctrl + C` to stop the development server
+- Vite provides excellent error overlays and debugging information
+- Hot module replacement preserves component state during development
+- Check the browser console for any runtime errors or warnings
 
-### `npm run build` fails to minify
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After running `npm run build`, the `dist` folder will contain your optimized production build ready for deployment to any static hosting service.
+
+Popular deployment options:
+- [Vercel](https://vercel.com/)
+- [Netlify](https://netlify.com/)
+- [GitHub Pages](https://pages.github.com/)
+
+## 📚 Learn More
+
+- [Vite Documentation](https://vitejs.dev/guide/)
+- [React Documentation](https://reactjs.org/docs/)
+- [React Router Documentation](https://reactrouter.com/docs/)
+
+## 🆘 Troubleshooting
+
+- **Port already in use**: Change the port in `vite.config.js` or kill the process using port 5173
+- **API connection issues**: Verify `VITE_API_URL` in your `.env` file matches your backend server
+- **Build errors**: Check the console for specific error messages and ensure all imports are correct
+
+Happy coding! 🎉

@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/HomePage/HomePage';
 import styles from './styles/App.module.css';

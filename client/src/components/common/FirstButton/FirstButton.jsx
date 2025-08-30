@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './FirstButton.module.css';
 
 const FirstButton = ({ children, onClick, disabled }) => {

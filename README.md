@@ -219,7 +219,7 @@ Environment variables are used to configure your application without hardcoding 
 The server `.env` file should contain the following environment variables:
 1. **MONGO_URI**: This variable contains the connection string for your MongoDB database. It tells your server where to find the database and how to connect to it. You will get this connection string from MongoDB Atlas when you set up your database.
 
-2. **PORT**: This variable defines the port on which your Express server will run. By default, this is set to `5000`, but you can change it to any available port number.
+2. **PORT**: This variable defines the port on which your Express server will run. By default, this is set to `5001`, but you can change it to any available port number.
 
 **How to Set Up Your `.env` Server File**
 
@@ -237,16 +237,16 @@ cd server
 ```env
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/libraryDB?retryWrites=true&w=majority
 CLIENT_URL=http://localhost:3000
-PORT=5000
+PORT=5001
 ```
    - Replace `MONGO_URI` to be your created Atlas DB connaction string
-   - You can change `5000` to any port number you prefer.
+   - You can change `5001` to any port number you prefer.
    - Make sure `CLIENT_URL` is set to your client current port.
 
 #### Setup Client .env file
 The client .env file should contain the following environment variables:
 
-1. **REACT_APP_API_URL**: This variable contains the URL of your backend API. It tells your client where to send requests to interact with the server. By default, this should be set to http://localhost:5000/api, but you should change it to match your server's actual URL if different.
+1. **REACT_APP_API_URL**: This variable contains the URL of your backend API. It tells your client where to send requests to interact with the server. By default, this should be set to http://localhost:5001/api, but you should change it to match your server's actual URL if different.
 
 **How to Set Up Your .env Client File**
 
@@ -261,9 +261,9 @@ cd client
    - Open the .env file in a text editor.
    - Add the following line, replacing the placeholder with your actual server URL:
 ```env
-REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_API_URL=http://localhost:5001/api
 ```
-Replace http://localhost:5000/api with the URL of your backend server if it is running on a different host or port.
+Replace http://localhost:5001/api with the URL of your backend server if it is running on a different host or port.
 
 ## Usage
 
@@ -282,7 +282,7 @@ cd server
 ```bash
 npm run dev
 ```
-   - By default, the server will run on `http://localhost:5000`. You can change the port by modifying the `PORT` variable in your `.env` file.
+   - By default, the server will run on `http://localhost:5001`. You can change the port by modifying the `PORT` variable in your `.env` file.
 
 3. Verify Server Operation:
    - Open a browser or API client (like [Postman](https://www.postman.com/)) to test your API endpoints.

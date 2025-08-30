@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import styles from './RandomDuck.module.css';
 import { DuckContext } from '../../context/DuckContext';
 import FirstButton from '../common/FirstButton/FirstButton';

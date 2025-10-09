@@ -3,8 +3,14 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const rubberDucksRoutes = require('./routes/rubberDucks')
+const videoRoutes = require('./routes/watch.js')
 
 dotenv.config();
+
+mongoose.connection.on('connected', () => {
+  console.log('Connected DB name:', mongoose.connection.name);
+});
+
 
 // Constants
 const PORT = process.env.PORT;
@@ -25,13 +31,18 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/api/rubberDucks', rubberDucksRoutes)
+app.use('/api/watch', videoRoutes)
+
+app.get('/', (req, res)=> {
+  res.json({mssg: 'welcom to MGB'})
+})
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     // listen for requests
-    app.listen(PORT, () => {
-      console.log('connected to mongoDB & listening on port', process.env.PORT)
+    app.listen(process.env.PORT, () => {
+      console.log('connected to mongoDB & listening on myport', process.env.PORT)
     })
   }).catch((err) => {
     console.log(err)

@@ -6,7 +6,7 @@ import RandomDuck from '../../components/RandomDuck/RandomDuck';
 const Home = () => {
   return (
     <div className={styles.home}>
-      <h1 className={styles.headline}>Duck It</h1>
+      <h1 className={styles.headline}>Be My Guest</h1>
       <RandomDuck />
     </div>
   );
